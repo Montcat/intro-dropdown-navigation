@@ -13,7 +13,7 @@
 					<a href="#" @click="openFeature = !openFeature"
 						>Features
 						<img
-							:src="`/src/assets/images/svgs/icon-arrow-${
+							:src="`@/assets/images/svgs/icon-arrow-${
 								openFeature ? 'up' : 'down'
 							}.svg`"
 							alt=""
@@ -27,7 +27,7 @@
 				<div class="dropdown-label">
 					<a href="#" @click="openCompany = !openCompany"
 						>Company<img
-							:src="`/src/assets/images/svgs/icon-arrow-${
+							:src="`@/assets/images/svgs/icon-arrow-${
 								openCompany ? 'up' : 'down'
 							}.svg`"
 							alt=""
@@ -77,19 +77,19 @@
 	const featureLinks = ref([
 		{
 			label: "Todo List",
-			src: "/src/assets/images/svgs/icon-todo.svg",
+			src: "@/assets/images/svgs/icon-todo.svg",
 		},
 		{
 			label: "Calendar",
-			src: "/src/assets/images/svgs/icon-calendar.svg",
+			src: "@/assets/images/svgs/icon-calendar.svg",
 		},
 		{
 			label: "Reminders",
-			src: "/src/assets/images/svgs/icon-reminders.svg",
+			src: "@/assets/images/svgs/icon-reminders.svg",
 		},
 		{
 			label: "Planning",
-			src: "/src/assets/images/svgs/icon-planning.svg",
+			src: "@/assets/images/svgs/icon-planning.svg",
 		},
 	]);
 </script>

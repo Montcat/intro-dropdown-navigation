@@ -10,7 +10,7 @@
 			<!-- Mobile nav Section -->
 			<div class="mobile-nav" v-if="!isLargeScreen">
 				<img
-					src="./assets/images/svgs/icon-menu.svg"
+					src="@/assets/images/svgs/icon-menu.svg"
 					alt=""
 					@click="open = true"
 				/>
@@ -26,7 +26,7 @@
 				<div class="hero-section">
 					<div class="hero-image">
 						<img
-							:src="`/src/assets/images/pictures/image-hero-${
+							:src="`@/assets/images/pictures/image-hero-${
 								isLargeScreen ? 'desktop' : 'mobile'
 							}.png`"
 							alt=""

@@ -1,16 +1,16 @@
 <template>
 	<div class="footer-container">
 		<div class="footer-item">
-			<img src="../assets/images/svgs/client-databiz.svg" alt="" />
+			<img src="@/assets/images/svgs/client-databiz.svg" alt="" />
 		</div>
 		<div class="footer-item">
-			<img src="../assets/images/svgs/client-audiophile.svg" alt="" />
+			<img src="@/assets/images/svgs/client-audiophile.svg" alt="" />
 		</div>
 		<div class="footer-item">
-			<img src="../assets/images/svgs/client-meet.svg" alt="" />
+			<img src="@/assets/images/svgs/client-meet.svg" alt="" />
 		</div>
 		<div class="footer-item">
-			<img src="../assets/images/svgs/client-maker.svg" alt="" />
+			<img src="@/assets/images/svgs/client-maker.svg" alt="" />
 		</div>
 	</div>
 </template>

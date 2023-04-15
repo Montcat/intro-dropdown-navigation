@@ -5,29 +5,29 @@
 				<a href="#" class="link-item" @click="toggleFeatures = !toggleFeatures"
 					><span>Features</span
 					><img
-						:src="`/src/assets/images/svgs/icon-arrow-${
+						:src="`@/assets/images/svgs/icon-arrow-${
 							toggleFeatures ? `up` : `down`
 						}.svg`"
 						alt=""
 				/></a>
 				<div class="feature-dropdown" v-show="toggleFeatures">
 					<a href="#" class="feature-item"
-						><img src="../assets/images/svgs/icon-todo.svg" alt="" /><span
+						><img src="@/assets/images/svgs/icon-todo.svg" alt="" /><span
 							>Todo list</span
 						>
 					</a>
 					<a href="#" class="feature-item"
-						><img src="../assets/images/svgs/icon-calendar.svg" alt="" /><span
+						><img src="@/assets/images/svgs/icon-calendar.svg" alt="" /><span
 							>Calender</span
 						>
 					</a>
 					<a href="#" class="feature-item"
-						><img src="../assets/images/svgs/icon-reminders.svg" alt="" /><span
+						><img src="@/assets/images/svgs/icon-reminders.svg" alt="" /><span
 							>Reminders</span
 						>
 					</a>
 					<a href="#" class="feature-item"
-						><img src="../assets/images/svgs/icon-planning.svg" alt="" /><span
+						><img src="@/assets/images/svgs/icon-planning.svg" alt="" /><span
 							>Planning</span
 						>
 					</a>
