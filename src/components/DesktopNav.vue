@@ -4,7 +4,7 @@
 			<div class="left-item">
 				<a href="#" class="link-item" @click="toggleFeatures = !toggleFeatures"
 					><span>Features</span
-					><img :src="toggleFeatures ? arrowDown : arrowUp" alt=""
+					><img :src="toggleFeatures ? arrowUp : arrowDown" alt=""
 				/></a>
 				<div class="feature-dropdown" v-show="toggleFeatures">
 					<a href="#" class="feature-item"
@@ -32,7 +32,7 @@
 			<div class="left-item">
 				<a href="#" class="link-item" @click="toggleCompany = !toggleCompany"
 					><span>Company</span
-					><img :src="toggleCompany ? arrowDown : arrowUp" alt=""
+					><img :src="toggleCompany ? arrowUp : arrowDown" alt=""
 				/></a>
 				<div class="company-dropdown" v-show="toggleCompany">
 					<a href="#" class="company-link-item"> History </a>
