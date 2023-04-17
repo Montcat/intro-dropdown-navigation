@@ -26,7 +26,7 @@
 				<div class="hero-section">
 					<div class="hero-image">
 						<img
-							:src="`@/assets/images/pictures/image-hero-${
+							:src="`@/assets/images/image-hero-${
 								isLargeScreen ? 'desktop' : 'mobile'
 							}.png`"
 							alt=""
