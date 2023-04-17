@@ -4,11 +4,7 @@
 			<div class="left-item">
 				<a href="#" class="link-item" @click="toggleFeatures = !toggleFeatures"
 					><span>Features</span
-					><img
-						:src="`@/assets/images/svgs/icon-arrow-${
-							toggleFeatures ? `up` : `down`
-						}.svg`"
-						alt=""
+					><img :src="toggleFeatures ? arrowDown : arrowUp" alt=""
 				/></a>
 				<div class="feature-dropdown" v-show="toggleFeatures">
 					<a href="#" class="feature-item"
@@ -36,11 +32,7 @@
 			<div class="left-item">
 				<a href="#" class="link-item" @click="toggleCompany = !toggleCompany"
 					><span>Company</span
-					><img
-						:src="`/src/assets/images/svgs/icon-arrow-${
-							toggleCompany ? `up` : `down`
-						}.svg`"
-						alt=""
+					><img :src="toggleCompany ? arrowDown : arrowUp" alt=""
 				/></a>
 				<div class="company-dropdown" v-show="toggleCompany">
 					<a href="#" class="company-link-item"> History </a>
@@ -68,6 +60,8 @@
 
 <script setup>
 	import { ref } from "vue";
+	import arrowDown from "@/assets/images/svgs/icon-arrow-down.svg";
+	import arrowUp from "@/assets/images/svgs/icon-arrow-up.svg";
 
 	const toggleFeatures = ref(false);
 
