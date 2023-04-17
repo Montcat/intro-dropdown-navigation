@@ -63,7 +63,7 @@
 	import arrowDown from "@/assets/images/svgs/icon-arrow-down.svg";
 	import arrowUp from "@/assets/images/svgs/icon-arrow-up.svg";
 	import TodoIcon from "@/assets/images/svgs/icon-todo.svg";
-	import CalenderIcon from "@/assets/images/svgs/icon-calender.svg";
+	import CalenderIcon from "@/assets/images/svgs/icon-calendar.svg";
 	import RemindersIcon from "@/assets/images/svgs/icon-reminders.svg";
 	import PlanningIcon from "@/assets/images/svgs/icon-planning.svg";
 
