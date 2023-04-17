@@ -11,12 +11,7 @@
 			<div class="nav-item dropdown">
 				<div class="dropdown-label">
 					<a href="#" @click="openFeature = !openFeature"
-						>Features
-						<img
-							:src="`@/assets/images/svgs/icon-arrow-${
-								openFeature ? 'up' : 'down'
-							}.svg`"
-							alt=""
+						>Features <img :src="openFeature ? arrowUp : arrowDown" alt=""
 					/></a>
 				</div>
 				<DropDown v-show="openFeature" :dropItems="[...featureLinks]" />
@@ -26,11 +21,7 @@
 			<div class="nav-item dropdown">
 				<div class="dropdown-label">
 					<a href="#" @click="openCompany = !openCompany"
-						>Company<img
-							:src="`@/assets/images/svgs/icon-arrow-${
-								openCompany ? 'up' : 'down'
-							}.svg`"
-							alt=""
+						>Company<img :src="openCompany ? arrowUp : arrowDown" alt=""
 					/></a>
 				</div>
 				<div class="company-dropdown" v-show="openCompany">
@@ -69,6 +60,12 @@
 <script setup>
 	import { ref } from "vue";
 	import DropDown from "./DropDown.vue";
+	import arrowDown from "@/assets/images/svgs/icon-arrow-down.svg";
+	import arrowUp from "@/assets/images/svgs/icon-arrow-up.svg";
+	import TodoIcon from "@/assets/images/svgs/icon-todo.svg";
+	import CalenderIcon from "@/assets/images/svgs/icon-calender.svg";
+	import RemindersIcon from "@/assets/images/svgs/icon-reminders.svg";
+	import PlanningIcon from "@/assets/images/svgs/icon-planning.svg";
 
 	const openFeature = ref(false);
 
@@ -77,19 +74,19 @@
 	const featureLinks = ref([
 		{
 			label: "Todo List",
-			src: "@/assets/images/svgs/icon-todo.svg",
+			src: TodoIcon,
 		},
 		{
 			label: "Calendar",
-			src: "@/assets/images/svgs/icon-calendar.svg",
+			src: CalenderIcon,
 		},
 		{
 			label: "Reminders",
-			src: "@/assets/images/svgs/icon-reminders.svg",
+			src: RemindersIcon,
 		},
 		{
 			label: "Planning",
-			src: "@/assets/images/svgs/icon-planning.svg",
+			src: PlanningIcon,
 		},
 	]);
 </script>

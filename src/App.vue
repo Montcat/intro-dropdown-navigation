@@ -25,12 +25,7 @@
 			<main class="main-content">
 				<div class="hero-section">
 					<div class="hero-image">
-						<img
-							:src="`@/assets/images/image-hero-${
-								isLargeScreen ? 'desktop' : 'mobile'
-							}.png`"
-							alt=""
-						/>
+						<img :src="isLargeScreen ? heroDesktopImg : heroMobileImg" alt="" />
 					</div>
 
 					<div class="hero-content">
@@ -57,6 +52,8 @@
 	import Footer from "./components/Footer.vue";
 	import DesktopNav from "./components/DesktopNav.vue";
 	import { useMediaQuery } from "@vueuse/core";
+	import heroDesktopImg from "@/assets/images/image-hero-desktop.png";
+	import heroMobileImg from "@/assets/images/image-hero-mobile.png";
 
 	const isLargeScreen = useMediaQuery("(min-width: 375px)");
 
